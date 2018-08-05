@@ -1,0 +1,124 @@
+:root {
+	--red: #fd634e;
+	--green: #a2ca28;
+	--grey: #656e74;
+}
+header {
+	height: 100vh;
+	background: url("../img/happy.jpg") no-repeat center/cover fixed;
+	position: relative;
+	overflow: hidden;
+}
+nav {
+	position: fixed;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+nav ul {
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+}
+nav img {
+	height: 47px;
+}
+nav li {
+		margin: 0 5px;
+}
+nav a {
+	color: white;
+	white-space: nowrap;
+	text-decoration: none;
+	text-transform: uppercase;
+	font: normal 1.2em Arial;
+	padding: 0 0 10px 0;
+	display: none;
+}
+.over a {
+	display: block;
+}
+#mobinav {
+	display: block;
+}
+#slogan {
+	font-family: Arial;
+	color: #fff;
+	text-transform: uppercase;
+	position: absolute;
+	bottom: 15vh;
+	left: 10%;
+}
+header h1 {
+	font-size: 2.8em;
+}
+header h1 span {
+	color: var(--green);
+}
+header p {
+	font-size: 1em;
+	text-align: right;
+	padding: 10px 50px;
+}
+header p span {
+	color: var(--red);
+}
+#fignya1 {
+	width: 105%;
+	height: 100px;
+	background-color: var(--red);
+	position: absolute;
+	bottom: -50px;
+	opacity: 0.3;
+	transform: rotate(-2deg);
+}
+#one {
+	height: 1200px;
+	background: var(--green);
+	padding-top: 110px;
+}
+#two {
+	height: 1200px;
+	background: var(--red);
+}
+#container {
+	max-width: 1180px;
+	margin: auto;
+}
+#one1 {
+	display: flex;
+	justify-content: row;
+}
+#one1 h1 {
+	font: normal 1.4em Arial;
+	color: white;
+	padding-bottom: 20px;
+}
+one1 {
+	
+}
+footer {
+	height: 1500px;
+	background: #0d1119;
+}
+
+@media only screen and (min-width: 600px) {
+	nav ul {
+		flex-direction: row;
+		text-align: left;
+	}
+	nav a {
+		display: block;
+		font-size: 1em;
+	}
+	#mobinav {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 850px) {
+	nav { padding: 40px 50px; }
+	nav ul { padding-top: 20px;	}
+	nav li { margin: 0 15px; }
+	nav a { font-size: 1.2em; }
+}
